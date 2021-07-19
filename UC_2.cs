@@ -6,14 +6,15 @@ namespace AddressBook
 {
     public class UC_2
     {
-       
+
         public void viewing()
         {
-            if (UC_1.AddressBook.Count>0)
+            if (UC_1.AddressBook.Count > 0)
             {
                 foreach (var c in UC_1.AddressBook)
                 {
                     PrintValue(c);
+                    Console.WriteLine("---------------------------");                                           //For Separation
                 }
             }
             else
@@ -34,5 +35,6 @@ namespace AddressBook
             Console.WriteLine("Phone Number: " + c.PhoneNumber);
             Console.WriteLine("Email Address: " + c.EmailId);
         }
+
     }
 }
