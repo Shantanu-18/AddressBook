@@ -11,7 +11,7 @@ namespace AddressBook
             while (true)
             {
                 Console.WriteLine("\nEnter your choice \n 1 for Adding Contacts \n 2 for viewing Address book" +
-                    " \n 3 for editing the existing contact \n 4 for deleting contact");
+                    " \n 3 for editing the existing contact \n 4 for deleting contact \n 5 for adding multiple contacts");
 
                 int choice = int.Parse(Console.ReadLine());
 
@@ -35,6 +35,11 @@ namespace AddressBook
                     case 4:
                         UC_4 obj3 = new UC_4();
                         obj3.Delete();
+                        break;
+
+                    case 5:
+                        UC_5 obj4 = new UC_5();
+                        obj4.AddingMultiple();
                         break;
 
                     default:
