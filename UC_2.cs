@@ -4,17 +4,21 @@ using System.Text;
 
 namespace AddressBook
 {
-    public class UC_2
+    public class UC_2 : UC_6
     {
-
-        public void viewing()
+        public void dictview()
         {
-            if (UC_1.AddressBook.Count > 0)
+            if (addressDictionary.Count>0)
             {
-                foreach (var c in UC_1.AddressBook)
+                foreach (KeyValuePair<string, List<Contacts>> dict in addressDictionary)
                 {
-                    PrintValue(c);
-                    Console.WriteLine("---------------------------");                                           //For Separation
+
+                    Console.WriteLine("-----------> {0}'s address book <-----------", dict.Key);
+                    foreach (var c in dict.Value)
+                    {
+                        PrintValue(c);
+                        Console.WriteLine("---------------------------");                                     //For Separation
+                    }
                 }
             }
             else
