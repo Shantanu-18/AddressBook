@@ -8,7 +8,7 @@ namespace AddressBook
     {
         public void AddingMultiple()
         {
-            Console.WriteLine("Enter how many contacts you want to add: ");
+            Console.Write("Enter how many contacts you want to add: ");
             int numberOfContacts = int.Parse(Console.ReadLine());
 
             int i = 1;
