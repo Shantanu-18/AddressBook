@@ -9,7 +9,7 @@ namespace AddressBook
             Console.WriteLine("Welcome to Address Book.");
 
 
-            UC_6 dict = new UC_6();
+            MultipleBooks dict = new MultipleBooks();
             dict.AddressBookDict();
 
             while (true)
@@ -28,18 +28,18 @@ namespace AddressBook
                     //    break;
 
                     case 1:
-                        UC_2 obj1 = new UC_2();
+                        Displaying obj1 = new Displaying();
                         //obj1.viewing();
                         obj1.dictview();
                         break;
 
                     case 2:
-                        UC_3 obj2 = new UC_3();
+                        EditingContacts obj2 = new EditingContacts();
                         obj2.Editing();
                         break;
 
                     case 3:
-                        UC_4 obj3 = new UC_4();
+                        Deleting obj3 = new Deleting();
                         obj3.Delete();
                         break;
 
